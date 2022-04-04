@@ -1,13 +1,13 @@
 #include <stdio.h>
-extern unsigned long returnsp;
+extern void returnsp();
 
 int trycell(int *x, int pos)
 {
     int row = pos / 9;
     int col = pos % 9;
     int i, j, used = 0;
-    unsigned long sp;
-    sp = returnsp;
+    (unsigned long) sp;
+    sp = (unsigned long)returnsp;
     printf("Entering Stack Trace %lu\n", sp);
 
     if (pos == 81) return 1;
