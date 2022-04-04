@@ -7,7 +7,7 @@ int trycell(int *x, int pos)
     int col = pos % 9;
     int i, j, used = 0;
     (unsigned long) sp;
-    sp = (unsigned long) returnsp;
+    sp = (unsigned long) returnsp();
     printf("Entering Stack Trace %lu\n", sp);
 
     if (pos == 81) return 1;
@@ -30,7 +30,7 @@ int trycell(int *x, int pos)
 
     x[pos] = 0;
 
-    sp = (unsigned long) returnsp;
+    sp = (unsigned long) returnsp();
     printf("Exiting stack trace");
     return 0;
 }
