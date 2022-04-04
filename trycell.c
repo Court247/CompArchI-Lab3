@@ -6,7 +6,7 @@ int trycell(int *x, int pos)
     int row = pos / 9;
     int col = pos % 9;
     int i, j, used = 0;
-    (unsigned long) sp;
+    unsigned long sp;
     sp = (unsigned long) returnsp();
     printf("Entering Stack Trace %lu\n", sp);
 
