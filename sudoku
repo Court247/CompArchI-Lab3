@@ -1,0 +1,6 @@
+
+FROM gcc:latest
+
+RUN gcc -o sudoku sudoku.c trycell.c returnsp.s
+
+CMD ["./sudoku"]
